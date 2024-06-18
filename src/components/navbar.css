@@ -1,0 +1,24 @@
+.navBar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3vw;
+    padding-block: 20px;
+    background-color: rgba(0, 0, 0, 0.633);
+    backdrop-filter: blur(10px);
+}
+
+.logoImg{
+    width: 50px;
+}
+
+button{
+    border: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #92deffc9;
+    font-size: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}

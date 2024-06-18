@@ -1,0 +1,163 @@
+.logoText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logoName{
+    font-size: 40px;
+    color: #ccf0ff;
+}
+
+.logoNameTwo{
+    color: #92deff;
+}
+
+.logo{
+    width: 100px;
+}
+
+.signup, .login{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+
+}
+
+.white{
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    border-radius: 50px;
+}
+
+.form{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 50px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    background-color: #002aff14;
+}
+
+#username, #email, #password, #cpassword, #submitButton{
+    border: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#submitButton{
+    background-color: #92deffc9;
+    font-size: 25px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+#submitButton:active{
+    background-color: #92deffa1;
+}
+
+#submitButton:disabled{
+    background-color: #689fb7c9;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.errorAndInput{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+
+.error{
+    font-weight: 300;
+    font-size: 20px;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.authH1{
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 50px;
+    padding-block: 30px 50px;
+}
+
+.seperator{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 5px;
+    width: 70%;
+    padding-top: 20px;
+}
+
+.goTo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.signUpLink, .logInLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.linkText{
+    color: rgba(255, 255, 255, 0.445);
+}
+
+.logInLinkText, .signUpLinkText{
+    text-decoration: none;
+
+    background-color: #2b434dd6;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.logInLinkText:link, .signUpLinkText:link{
+    color:#92deff;
+}
+
+.logInLinkText:hover, .signUpLinkText:hover{
+    color:#92deffa8;
+}
+
+.logInLinkText:visited, .signUpLinkText:visited{
+    color:#4ebceb;
+}
+
+@media only screen and (max-width: 920px) {
+    .signup, .login{
+        flex-direction: column;
+    }
+
+    .white{
+        scale: 0.9;
+    }
+}
